@@ -6,7 +6,7 @@ Copyright (c) 2026 Thomas Seri. All Rights Reserved.
 
 ### 1. DEFINITIONS
 - **"Author"** means Thomas Seri.
-- **"Software"** means the R08 Geodesic Mesh Neural Network architecture, code, model weights, checkpoints, configurations, and documentation provided herein.
+- **"Software"** means the R08 (Rob) Geodesic Mesh Neural Network architecture, model weights, checkpoints, Knowledge Tree ontologies, search engines, configurations, and documentation provided herein for Sentinel LifeOS.
 - **"Commercial Use"** means using the Software or any derivative work in any business, for-profit venture, service provision, integration into commercial applications, or for any activity generating revenue.
 - **"Non-Commercial Research Use"** means using the Software solely for personal education, academic study, reproducibility evaluation, and non-profit benchmarking.
 
@@ -30,7 +30,7 @@ You shall NOT:
 
 ### 4. EXPLICIT RESERVATION OF PATENT RIGHTS (PATENT NOTICE)
 **NO PATENT LICENSE GRANTED:**  
-The Author specifically reserves all worldwide rights to apply for, prosecute, maintain, and enforce any patents, utility models, registered designs, or industrial property rights covering the spherical geodesic mesh neural network architecture, polyhedral discrete face routing, pyramidal central hub communication, cascade stage mechanisms, or any related methods and systems embodied in or practiced by this Software. 
+The Author specifically reserves all worldwide rights to apply for, prosecute, maintain, and enforce any patents, utility models, registered designs, or industrial property rights covering the spherical geodesic mesh neural network architecture, polyhedral discrete face routing, pyramidal central hub communication, hierarchical ontology knowledge trees, or any related methods and systems embodied in or practiced by this Software. 
 
 No patent license—whether express, implied, by estoppel, or otherwise—is granted under this License. The public availability of this repository does NOT constitute a waiver, dedication to the public domain, or forfeiture of any present or future patent rights.
 
