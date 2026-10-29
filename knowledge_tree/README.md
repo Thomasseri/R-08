@@ -58,4 +58,7 @@ print(f"Coppia di Serraggio: {nodo['dati']['componenti_critici']['cuscinetto_lat
 
 **Autore:** Thomas Seri  
 **Piattaforma:** [Sentinel LifeOS](https://www.sentinelhub.eu)  
-**Licenza:** Sentinel R08 Non-Commercial Research License & Patent Reservation
+**Licenza:** Sentinel R08 Non-Commercial Research License & Patent Reservation  
+
+> **Nota Legale sui Marchi Registrati:**  
+> Tutti i marchi, loghi e denominazioni commerciali di terzi citati a scopo di esempio o compatibilità (quali Siemens, SKF, Grundfos, IFM Electronic) appartengono ai rispettivi legittimi proprietari. Sono menzionati esclusivamente in conformità al principio del *fair use* descrittivo (Art. 21 CPI / Art. 14 EU Trade Mark Regulation) per fini di interoperabilità tecnica, manutenzione e identificazione dei ricambi.
