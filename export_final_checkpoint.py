@@ -22,7 +22,8 @@ def export_checkpoint(ckpt_path: Path, out_dir: Path):
     # Rimuovi eventuali prefissi inutili
     clean_state_dict = {}
     for k, v in state_dict.items():
-        clean_state_dict[k] = v.contiguous()
+        if isinstance(v, torch.Tensor):
+            clean_state_dict[k] = v.clone().contiguous()
 
     out_file = out_dir / "model.safetensors"
     print(f"Salvataggio safetensors in: {out_file}")
