@@ -1,0 +1,93 @@
+{
+  "system": "Sentinel LifeOS Knowledge Tree",
+  "version": "1.0",
+  "author": "Thomas Seri",
+  "website": "https://www.sentinelhub.eu",
+  "nodes": {
+    "manutenzione.meccanica.pompe_centrifughe.pompa_linea_1": {
+      "argomento": "Manutenzione Industriale",
+      "categoria": "Meccanica & Idraulica",
+      "sotto_categoria": "Pompe Centrifughe",
+      "componente": "Pompa Linea 1 (Alimentazione Principale)",
+      "dati_costruttore": {
+        "costruttore": "Grundfos",
+        "modello": "CR 3-15",
+        "ore_garantite_funzionamento": 20000,
+        "intervallo_manutenzione_programmata_ore": 5000,
+        "soglia_vibrazione_allarme_mm_s": 4.5,
+        "temperatura_massima_esercizio_c": 80.0
+      },
+      "componenti_critici": {
+        "cuscinetto_lato_motore": {
+          "codice_ricambio": "SKF 6204-2RSH",
+          "coppia_serraggio_nm": 35,
+          "ore_garantite": 5000,
+          "tipo_lubrificazione": "Grasso sintetico ad alte prestazioni (NLGI 2)"
+        },
+        "tenuta_meccanica": {
+          "codice_ricambio": "HQQE Cartuccia D12",
+          "ore_garantite": 8000,
+          "pressione_massima_bar": 16
+        }
+      },
+      "procedura_intervento": [
+        "1. Sezionare alimentazione elettrica dal quadro generale e applicare lucchetto LOTO.",
+        "2. Chiudere le valvole a monte e a valle della pompa e scaricare la pressione residua.",
+        "3. Smontare il giunto di accoppiamento e verificare l'assenza di giochi assiali anomali.",
+        "4. Sostituire il cuscinetto SKF 6204-2RSH verificando la pulizia della sede e serrare a 35 Nm.",
+        "5. Riaprire le valvole gradualmente, verificare tenuta idraulica ed eseguire reset allarme su Sentinel."
+      ],
+      "affidabilita_dati_pct": 99.8
+    },
+    "manutenzione.sensori.vibrazione.sensore_v1": {
+      "argomento": "Manutenzione Industriale",
+      "categoria": "Sensoristica & Strumentazione",
+      "sotto_categoria": "Sensori di Vibrazione",
+      "componente": "Sensore Vibrazione N1 (Testa Pompa)",
+      "dati_costruttore": {
+        "costruttore": "IFM Electronic",
+        "modello": "VSA001",
+        "principio_misura": "Accelerometro piezoelettrico MEMS",
+        "range_frequenza_hz": "2 - 10000",
+        "uscita_segnale": "Analogico 4-20 mA proporzionale a RMS velocità (0-25 mm/s)",
+        "connettore": "M12 a 4 poli standard industriale"
+      },
+      "soglie_allarme_norma_iso_10816": {
+        "stato_ottimale_verde": "< 2.8 mm/s",
+        "ispezione_raccomandata_giallo": "2.8 - 4.5 mm/s",
+        "allarme_fermo_rosso": "> 4.5 mm/s"
+      },
+      "affidabilita_dati_pct": 100.0
+    },
+    "automazione.plc.siemens_logo.modulo_0ba8": {
+      "argomento": "Automazione & Elettrico",
+      "categoria": "Controllori Logici Programmabili (PLC)",
+      "sotto_categoria": "Micro-PLC Siemens",
+      "componente": "Siemens LOGO! 24RCE (0BA8)",
+      "dati_costruttore": {
+        "costruttore": "Siemens AG",
+        "modello": "LOGO! 24RCE 0BA8.Standard",
+        "software_programmazione": "LogoSoft Comfort V8.3+",
+        "linguaggi_supportati": ["LAD (Ladder Diagram)", "FBD (Function Block Diagram)"],
+        "alimentazione": "24V AC/DC",
+        "ingressi_digitali": 8,
+        "uscite_rele": 4,
+        "porta_comunicazione": "Ethernet TCP/IP (Modbus / S7 protocol)"
+      },
+      "assegnazione_i_o_quadro": {
+        "I1": "Pulsante Marcia (NO)",
+        "I2": "Pulsante Arresto (NC)",
+        "I3": "Contatto Ausiliario Emergenza a Fungo (NC)",
+        "I4": "Segnale Allarme Sensore Vibrazione (NO)",
+        "Q1": "Bobina Teleruttore Motore Pompa (24V)",
+        "Q2": "Lampada Segnalazione Marcia (Verde)",
+        "Q3": "Lampeggiante Allarme Manutenzione (Rosso)"
+      },
+      "logica_ladder_prescritta": [
+        "Ramo 1: Contatto I3 (Emergenza) in serie con I2 (Stop) e il parallelo (I1 + autoritenuta Q1) comanda Q1.",
+        "Ramo 2: Contatto di allarme I4 attiva il blocco Timer Ritardo e diseccita Q1 inserendo Q3."
+      ],
+      "affidabilita_dati_pct": 100.0
+    }
+  }
+}

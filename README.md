@@ -46,6 +46,9 @@ Mentre i Large Language Model convenzionali si affidano al solito Transformer "p
    - **Stadio 2 (Parole):** Lessico esteso (17.908 token).
    - **Stadio 3 (Unioni):** Sintagmi e unioni concettuali (20.006 token).
 
+5. **Sentinel Hierarchical Knowledge Tree (Modulo Zero-Allucinazioni)**:
+   - Modulo ontologico deterministico situato in [`knowledge_tree/`](knowledge_tree/): organizza la conoscenza a 4 livelli (*Argomento ➡️ Categoria ➡️ Componente ➡️ Dati/Procedure*), garantendo la precisione assoluta su codici ricambio, coppie di serraggio (Nm) e ore garantite senza rischio di allucinazioni neurali.
+
 ---
 
 ## 📊 Benchmark Diretti: R08 vs Transformer Baseline (~45M)
