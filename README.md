@@ -2,7 +2,8 @@
 ### *Il Cuore Neurale Geometrico di SENTINEL LifeOS*
 
 [![Model Name](https://img.shields.io/badge/Model-R08%20(Rob)-orange.svg)](https://github.com/Thomasseri/R-08)
-[![Ecosystem](https://img.shields.io/badge/Ecosystem-Sentinel%20LifeOS-purple.svg)](https://github.com/Thomasseri/R-08)
+[![Official Site](https://img.shields.io/badge/Official%20Site-sentinelhub.eu-007acc.svg)](https://www.sentinelhub.eu)
+[![Ecosystem](https://img.shields.io/badge/Ecosystem-Sentinel%20LifeOS-purple.svg)](https://www.sentinelhub.eu)
 [![Parameters](https://img.shields.io/badge/Parameters-45M-blue.svg)](https://github.com/Thomasseri/R-08)
 [![Architecture](https://img.shields.io/badge/Architecture-Geodesic%20Pyramidal%20Sphere-brightgreen.svg)](https://github.com/Thomasseri/R-08)
 [![Training Speed](https://img.shields.io/badge/Training%20Speed-10%2C200%20tok%2Fs%20(MPS)-red.svg)](https://github.com/Thomasseri/R-08)
@@ -10,7 +11,8 @@
 [![License](https://img.shields.io/badge/License-Non--Commercial%20Research-lightgrey.svg)](LICENSE.md)
 
 **Nome Ufficiale del Modello:** **R08** *(per gli amici **Rob**, da Robot)*  
-**Progetto Padre:** **Sentinel LifeOS** *(Il Sistema Operativo di Vita e Gestione)*  
+**Progetto Padre & Ecosistema:** **[Sentinel LifeOS](https://www.sentinelhub.eu)** *(Il Sistema Operativo di Vita e Gestione)*  
+**Sito Ufficiale:** **[www.sentinelhub.eu](https://www.sentinelhub.eu)**  
 **Autore & Ideatore:** Thomas Seri  
 **Hardware di Sviluppo:** Apple Silicon (Metal Performance Shaders - MPS)
 
@@ -94,4 +96,5 @@ Il modello **R08** e il sistema **Sentinel LifeOS** sono distribuiti sotto la li
 - ❌ **Vietato:** Qualsiasi utilizzo commerciale, vendita, sublicenza o incorporazione in prodotti for-profit senza licenza commerciale scritta.
 - ⚖️ **Nota Brevettuale:** L'autore (Thomas Seri) si riserva esplicitamente tutti i diritti brevettuali presenti e futuri relativi alla topologia di instradamento geodetico, al centro piramidale e all'architettura R08.
 
-Per partnership aziendali, licenze commerciali o integrazione in Sentinel: **Thomas Seri**.
+Per partnership aziendali, licenze commerciali o integrazione in Sentinel:  
+**Thomas Seri** — Sito ufficiale: **[www.sentinelhub.eu](https://www.sentinelhub.eu)**
