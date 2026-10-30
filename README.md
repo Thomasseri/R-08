@@ -73,7 +73,7 @@ Mentre i Large Language Model convenzionali si affidano al solito Transformer "p
 ### 1. Studio A/B Diretto: Sentinel R08 (v7 Pyramid) vs Transformer Baseline (Chinchilla 185k)
 Per quantificare scientificamente il contributo dell'**architettura a 3 sfere geodetiche e centro piramidale** rispetto all'architettura standard a matrici dense, è stato condotto un esperimento di controllo A/B rigoroso:
 - **Pari Dati e Token:** Entrambi i modelli sono stati addestrati sullo stesso identico corpus (`v22_chinchilla_mix`, 0.74B token Chinchilla-optimal), stesso vocabolario a 1.251 pezzi (`vocab_stages`), stesso batch size e stesso hardware di sviluppo (Apple Silicon MPS).
-- **Confronto Strutturale:** **Sentinel R08** (v7 Pyramid, 44.5M) impiega **soli 2 strati di attenzione densa** integrati da 3 stadi di geosfere a 80 facce e centro piramidale a 1-hop; la **Transformer Baseline** (44.9M) adotta 14 strati di attenzione causale densa standard (GPT-2 style).
+- **Confronto Strutturale:** **Sentinel R08** (v7 Pyramid, 44.5M) impiega **soli 2 strati di attenzione densa** integrati da 3 stadi di geosfere a 80 facce e centro piramidale a 1-hop; la **[Transformer Baseline](https://huggingface.co/Tom2701/R-08-Transformer-Baseline)** (44.9M) adotta 14 strati di attenzione causale densa standard (GPT-2 style). Il codice sorgente e i checkpoint safetensors della baseline sono liberamente consultabili e scaricabili su [GitHub](https://github.com/Thomasseri/R-08-Transformer-Baseline) e [Hugging Face](https://huggingface.co/Tom2701/R-08-Transformer-Baseline).
 
 | Metrica di Laboratorio | Sentinel R08 (v7 Pyramid) | Transformer Baseline (185k Pretrain) | Transformer Baseline (10k Midtrain) | Vantaggio Architetturale R08 |
 | :--- | :---: | :---: | :---: | :---: |
@@ -103,7 +103,7 @@ Valutazione preliminare eseguita sui benchmark pubblici standard per la lingua i
 | **GPT-Neo-125M** | EleutherAI | 125M *(2.8× R08)* | 12 strati | ~500 MB | 68.2% | 61.5% |
 | **Pythia-70M** | EleutherAI | 70M *(1.6× R08)* | 14 strati | ~280 MB | 73.8% | 64.0% |
 | **GPT-2 Small** | OpenAI | 124M *(2.7× R08)* | 12 strati | ~498 MB | 74.5% - 80.1% | 66.8% |
-| **Transformer Baseline (14 Layers)** | Baseline A/B di Controllo | 44.9M | 14 strati | ~179 MB | 82.53% - 85.84% | 85.15% - 86.83% |
+| [**Transformer Baseline (14 Layers)**](https://huggingface.co/Tom2701/R-08-Transformer-Baseline) | Baseline A/B di Controllo | 44.9M | 14 strati | ~179 MB | 82.53% - 85.84% | 85.15% - 86.83% |
 | 🏆 **R08 (Rob / v7 Pyramid)** | **Thomas Seri / Sentinel** | **44.5M** | **2 strati** | **171.7 MB** | **80.95%** | **73.46%** |
 
 > [!NOTE]
