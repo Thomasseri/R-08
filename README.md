@@ -80,6 +80,11 @@ Valutazione scientifica completa eseguita sull'**intero set di test** (zero camp
 | **GPT-2 Small** | OpenAI | 124M *(2.7× R08)* | 12 strati | ~498 MB | 74.5% - 80.1% | 66.8% |
 | 🏆 **R08 (Rob)** | **Thomas Seri / Sentinel** | **44.9M** | **2 strati** | **171.7 MB** | **80.95%** | **73.46%** |
 
+> [!NOTE]
+> **Trasparenza Scientifica & Dominio Linguistico:**
+> - **Specializzazione sul Dominio Italiano:** I benchmark `BLiMP-IT` e `MultiBLiMP` misurano la competenza sintattica e logica nella lingua italiana. Mentre i modelli open esteri (Pythia, OPT, GPT-Neo) sono foundation model pre-addestrati in inglese su centinaia di miliardi di token (The Pile/WebText) con tokenizer non ottimizzati per l'italiano, **R08 nasce specificamente per eccellere sull'italiano**. Eseguendo lo stesso test su BLiMP in lingua inglese nativa, Pythia e GPT-2 ottengono le loro massime prestazioni (74.6% e 85.0%), mentre R08 si attesta sul 52.8% (livello base non addestrato su inglese).
+> - **La Vera Rivoluzione di R08:** Il merito architetturale di R08 non risiede unicamente nella lingua, ma nell'**efficienza geometrica a 3 sfere piramidali**: eguaglia e supera modelli di fascia superiore a 12–14 strati densi impiegando **soli 2 strati di attenzione**, con l'**85.7% in meno di banda memoria KV-cache** e il **31.2% in meno di consumo energetico sulla batteria del Mac**, raggiungendo l'80.95% con soli **0.74 miliardi di token** di pretraining contro gli oltre 300 miliardi di token dei concorrenti.
+
 ---
 
 ## 🚀 Utilizzo Rapido (Inference Quickstart)
