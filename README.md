@@ -55,8 +55,8 @@ Mentre i Large Language Model convenzionali si affidano al solito Transformer "p
    - Al centro della sfera risiede un super-nodo piramidale connesso a tutte le 80 facce triangolari (753.408 parametri dedicati).
    - Consente lo scambio istantaneo di informazioni globali polo-polo in un solo passaggio, eliminando i colli di bottiglia.
 
-3. **Efficienza Estrema (2 Strati di Attenzione vs 14 Strati del Transformer Standard)**:
-   - **R08** compete e supera Transformer standard a **12-14 blocchi pesanti di attenzione**, impiegando **soli 2 strati di attenzione causale densa**.
+3. **Efficienza Strutturale (2 Strati di Attenzione vs 12-14 Strati Convenzionali)**:
+   - Dai primi test di laboratorio pare che R08 riesca a mantenere una solida coerenza sintattica impiegando **soli 2 strati di attenzione causale densa** (invece dei consueti 12-14 strati), affidando la propagazione dei pattern alla geometria sferica.
 
 4. **Cascata Multilivello a 3 Stadi in Serie**:
    - **Stadio 1 (Pezzi):** Subword grain fine (1.251 token).
@@ -64,13 +64,13 @@ Mentre i Large Language Model convenzionali si affidano al solito Transformer "p
    - **Stadio 3 (Unioni):** Sintagmi e unioni concettuali (20.006 token).
 
 5. **Integrazione con Sentinel Knowledge Ecosystem**:
-   - R08 è progettato nativamente per accoppiarsi al motore ontologico deterministico a 4 livelli esclusivo della piattaforma [Sentinel LifeOS](https://www.sentinelhub.eu), garantendo precisione assoluta su codici ricambio, coppie di serraggio (Nm) e parametri tecnici a zero allucinazioni.
+   - R08 è progettato nativamente per accoppiarsi al motore ontologico a 4 livelli della piattaforma [Sentinel LifeOS](https://www.sentinelhub.eu), con l'obiettivo di supportare query tecniche su codici ricambio, coppie di serraggio (Nm) e parametri industriali.
 
 ---
 
-## 📊 Benchmark Scientifici Reali: R08 vs Big Tech Open Source (~50M - 125M)
+## 📊 Primi Benchmark di Laboratorio & Invito alla Validazione (~50M - 125M)
 
-Valutazione scientifica completa eseguita sull'**intero set di test** (zero campionamento, 3.481 coppie BLiMP-IT e 2.916 coppie MultiBLiMP):
+Valutazione preliminare eseguita sull'intero set di test (`BLiMP-IT` 3.481 coppie e `MultiBLiMP` 2.916 coppie):
 
 | Modello | Creatore | Parametri | Strati Attenzione Densa | Peso Checkpoint | BLiMP-IT (Accuratezza Linguistica) | MultiBLiMP (Ragionamento Logico) |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
@@ -78,12 +78,13 @@ Valutazione scientifica completa eseguita sull'**intero set di test** (zero camp
 | **GPT-Neo-125M** | EleutherAI | 125M *(2.8× R08)* | 12 strati | ~500 MB | 68.2% | 61.5% |
 | **Pythia-70M** | EleutherAI | 70M *(1.6× R08)* | 14 strati | ~280 MB | 73.8% | 64.0% |
 | **GPT-2 Small** | OpenAI | 124M *(2.7× R08)* | 12 strati | ~498 MB | 74.5% - 80.1% | 66.8% |
-| 🏆 **R08 (Rob)** | **Thomas Seri / Sentinel** | **44.9M** | **2 strati** | **171.7 MB** | **80.95%** | **73.46%** |
+| **R08 (Rob)** | **Thomas Seri / Sentinel** | **44.9M** | **2 strati** | **171.7 MB** | **80.95%** | **73.46%** |
 
 > [!NOTE]
-> **Trasparenza Scientifica & Dominio Linguistico:**
-> - **Specializzazione sul Dominio Italiano:** I benchmark `BLiMP-IT` e `MultiBLiMP` misurano la competenza sintattica e logica nella lingua italiana. Mentre i modelli open esteri (Pythia, OPT, GPT-Neo) sono foundation model pre-addestrati in inglese su centinaia di miliardi di token (The Pile/WebText) con tokenizer non ottimizzati per l'italiano, **R08 nasce specificamente per eccellere sull'italiano**. Eseguendo lo stesso test su BLiMP in lingua inglese nativa, Pythia e GPT-2 ottengono le loro massime prestazioni (74.6% e 85.0%), mentre R08 si attesta sul 52.8% (livello base non addestrato su inglese).
-> - **La Vera Rivoluzione di R08:** Il merito architetturale di R08 non risiede unicamente nella lingua, ma nell'**efficienza geometrica a 3 sfere piramidali**: eguaglia e supera modelli di fascia superiore a 12–14 strati densi impiegando **soli 2 strati di attenzione**, con l'**85.7% in meno di banda memoria KV-cache** e il **31.2% in meno di consumo energetico sulla batteria del Mac**, raggiungendo l'80.95% con soli **0.74 miliardi di token** di pretraining contro gli oltre 300 miliardi di token dei concorrenti.
+> **Trasparenza Metodologica & Invito a Riscontri Indipendenti:**
+> - **Dominio Linguistico Specializzato:** I test `BLiMP-IT` e `MultiBLiMP` misurano specificamente la sensibilità grammaticale in lingua italiana, dominio primario per cui R08 è stato curato e addestrato. Al contrario, modelli come Pythia, OPT o GPT-Neo sono foundation model prevalentemente anglofoni con vocabolari subword non ottimizzati per l'italiano (sul benchmark gemello BLiMP in inglese nativo, infatti, Pythia e GPT-2 ottengono le loro massime performance a 74.6% e 85.0%, mentre R08 non essendo addestrato su inglese si attesta sul 52.8%).
+> - **Primi Riscontri di Efficienza Architetturale:** Dai primi test di laboratorio pare che l'architettura geodetica a 3 sfere con soli 2 strati di attenzione densa consenta una notevole efficienza di calcolo (fino a -85.7% di traffico di banda KV-cache in RAM e oltre il 30% di risparmio sui consumi energetici misurati su Apple Silicon Metal).
+> - **Aperto alla Community:** Trattandosi di un'architettura sperimentale non convenzionale, questi numeri preliminari di laboratorio attendono ulteriori riscontri e repliche indipendenti. Il codice e i pesi sono 100% open source proprio per invitare ricercatori, ingegneri e appassionati a testare il modello nei loro ambienti e a condividere feedback, limiti o suggerimenti.
 
 ---
 
