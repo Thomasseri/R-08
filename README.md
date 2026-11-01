@@ -164,5 +164,6 @@ print(risposta)
 Il modello **R08** e il sistema **Sentinel LifeOS** sono distribuiti sotto la licenza **Sentinel R08 Non-Commercial Research License & Patent Reservation** (consultabile in [`LICENSE.md`](LICENSE.md)).
 
 - ✅ **Consentito:** Studio personale, ricerca accademica, test di riproducibilità e citazione scientifica.
-- ❌ **Vietato:** Qualsiasi utilizzo commerciale, vendita, sublicenza o incorporazione in prodotti for-profit senza licenza commerciale scritta.
+- ❌ **Vietato a Scopi di Lucro:** Qualsiasi utilizzo commerciale, vendita, sublicenza o incorporazione in prodotti for-profit senza licenza commerciale scritta rilasciata da Sentinel.
+- 🚫 **Divieti Etici Assoluti (Acceptable Use Policy):** È severamente vietato qualsiasi impiego per scopi militari/bellici/armi, propaganda o indottrinamento religioso, pornografia/sfruttamento sessuale, promozione di dipendenze (gioco d'azzardo/stupefacenti) o sorveglianza biometrica lesiva dei diritti umani. La violazione comporta la revoca immediata di ogni diritto d'uso e costituisce violazione di proprietà intellettuale (vedi [`LICENSE.md`](LICENSE.md)).
 - ⚖️ **Nota Brevettuale:** L'autore (Thomas Seri) si riserva esplicitamente tutti i diritti brevettuali presenti e futuri relativi alla topologia di instradamento geodetico, al centro piramidale e all'architettura R08.
