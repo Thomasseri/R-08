@@ -36,8 +36,8 @@
     "no_walk": true,
     "compass_spiral": true
   },
-  "total_parameters": 44936996,
-  "trainable_parameters": 44896163,
+  "total_parameters": 44575907,
+  "trainable_parameters": 44575907,
   "auto_map": {
     "AutoConfig": "modeling_geodesic.GeodesicConfig",
     "AutoModelForCausalLM": "modeling_geodesic.GeodesicPyramidModel"

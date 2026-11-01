@@ -118,7 +118,7 @@ Valutazione preliminare eseguita sui benchmark pubblici standard per la lingua i
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
 | **OPT-125M** | Meta (Facebook AI) | 125M *(2.8× R08)* | 12 strati | ~500 MB | 62.5% | 58.0% |
 | **GPT-Neo-125M** | EleutherAI | 125M *(2.8× R08)* | 12 strati | ~500 MB | 68.2% | 61.5% |
-| **Pythia-70M** | EleutherAI | 70M *(1.6× R08)* | 14 strati | ~280 MB | 73.8% | 64.0% |
+| **Pythia-70M** | EleutherAI | 70M *(1.6× R08)* | 6 strati | ~280 MB | 73.8% | 64.0% |
 | **GPT-2 Small** | OpenAI | 124M *(2.7× R08)* | 12 strati | ~498 MB | 74.5% - 80.1% | 66.8% |
 | [**Transformer Baseline (14 Layers)**](https://huggingface.co/Tom2701/R-08-Transformer-Baseline) | Baseline A/B di Controllo | 44.9M | 14 strati | ~179 MB | 82.53% - 85.84% | 85.15% - 86.83% |
 | 🌐 **R08 (Rob / v7 Pyramid)** | **Thomas Seri / Sentinel** | **44.5M** | **2 strati** | **171.7 MB** | **80.95%** | **73.46%** |
