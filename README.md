@@ -30,7 +30,8 @@ inference: false
 **Nome Ufficiale del Modello:** **R08** *(per gli amici **Rob**, da Robot)*  
 **Progetto Padre & Ecosistema:** **[Sentinel LifeOS](https://www.sentinelhub.eu)** *(Il Sistema Operativo di Vita e Gestione)*  
 **Sito Ufficiale:** **[www.sentinelhub.eu](https://www.sentinelhub.eu)**  
-**Autore & Ideatore:** Thomas Seri  
+**Autore & Ideatore:** Thomas Seri (Sentinel)  
+**Organizzazione:** SentinelHub  
 **Hardware di Sviluppo:** Apple Silicon (Metal Performance Shaders - MPS)  
 **Versione Successiva Evoluta:** 🚀 [**Sentinel R-08 v7.2 (51.6M)**](https://huggingface.co/SentinelHub/R-08-v7.2) | [GitHub v7.2](https://github.com/Thomasseri/R-08-v7.2)  
 **Nuovo Record Scientifico:** 🌟 [**Sentinel R-08 v7.2a DA ZERO (51.6M)**](https://github.com/Thomasseri/R-08-v7.2a) | [Hugging Face v7.2a](https://huggingface.co/SentinelHub/R-08-v7.2a)
