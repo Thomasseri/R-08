@@ -32,8 +32,8 @@ inference: false
 **Sito Ufficiale:** **[www.sentinelhub.eu](https://www.sentinelhub.eu)**  
 **Autore & Ideatore:** Thomas Seri  
 **Hardware di Sviluppo:** Apple Silicon (Metal Performance Shaders - MPS)  
-**Versione Successiva Evoluta:** 🚀 [**Sentinel R-08 v7.2 (51.6M)**](https://huggingface.co/Tom2701/R-08-v7.2) | [GitHub v7.2](https://github.com/Thomasseri/R-08-v7.2)  
-**Nuovo Record Scientifico:** 🌟 [**Sentinel R-08 v7.2a DA ZERO (51.6M)**](https://github.com/Thomasseri/R-08-v7.2a) | [Hugging Face v7.2a](https://huggingface.co/Tom2701/R-08-v7.2a)
+**Versione Successiva Evoluta:** 🚀 [**Sentinel R-08 v7.2 (51.6M)**](https://huggingface.co/SentinelHub/R-08-v7.2) | [GitHub v7.2](https://github.com/Thomasseri/R-08-v7.2)  
+**Nuovo Record Scientifico:** 🌟 [**Sentinel R-08 v7.2a DA ZERO (51.6M)**](https://github.com/Thomasseri/R-08-v7.2a) | [Hugging Face v7.2a](https://huggingface.co/SentinelHub/R-08-v7.2a)
 
 > [!TIP]
 > ### 🚀 È Rilasciato il Nuovo Modello Sentinel R08-v7.2 (51.6M) & il Record di v7.2a!
@@ -42,8 +42,8 @@ inference: false
 > - **MultiBLiMP balza al record storico del 76.71% (v7.2a)**
 > - **Eliminazione totale di loop e balbuzie ciclica** nei testi lunghi
 > - **-85.7% di memoria KV-Cache** e **-28.3% di consumo energetico** rispetto al Transformer convenzionale
-> - 🌟 **GitHub v7.2a:** [Thomasseri/R-08-v7.2a](https://github.com/Thomasseri/R-08-v7.2a) | [Tom2701/R-08-v7.2a](https://huggingface.co/Tom2701/R-08-v7.2a)
-> - 🐙 **GitHub v7.2:** [Thomasseri/R-08-v7.2](https://github.com/Thomasseri/R-08-v7.2) | [Tom2701/R-08-v7.2](https://huggingface.co/Tom2701/R-08-v7.2)
+> - 🌟 **GitHub v7.2a:** [Thomasseri/R-08-v7.2a](https://github.com/Thomasseri/R-08-v7.2a) | [SentinelHub/R-08-v7.2a](https://huggingface.co/SentinelHub/R-08-v7.2a)
+> - 🐙 **GitHub v7.2:** [Thomasseri/R-08-v7.2](https://github.com/Thomasseri/R-08-v7.2) | [SentinelHub/R-08-v7.2](https://huggingface.co/SentinelHub/R-08-v7.2)
 
 ---
 
@@ -88,13 +88,13 @@ Mentre i Large Language Model convenzionali si affidano al solito Transformer "p
 > **Modello di Controllo Open Source per il Paragone Scientifico (Vocabolario 1.2k pezzi):**  
 > Per consentire alla community scientifica di replicare ed esaminare in modo trasparente tutti i risultati comparativi rispetto all'architettura a **geoide piramidale (Sentinel R-08)**, il modello Transformer denso di controllo utilizzato per il benchmark (44.9M parametri, 14 strati di attenzione causale, stesso identico dataset Chinchilla e stesso vocabolario a 1.2k pezzi subword) è interamente accessibile con codice sorgente e pesi safetensors:
 > - 🐙 **GitHub:** [Thomasseri/R-08-Transformer-Baseline](https://github.com/Thomasseri/R-08-Transformer-Baseline)
-> - 🤗 **Hugging Face Hub:** [Tom2701/R-08-Transformer-Baseline](https://huggingface.co/Tom2701/R-08-Transformer-Baseline)
+> - 🤗 **Hugging Face Hub:** [SentinelHub/R-08-Transformer-Baseline](https://huggingface.co/SentinelHub/R-08-Transformer-Baseline)
 
 Per quantificare scientificamente il contributo dell'**architettura a 3 sfere geodetiche e centro piramidale** rispetto all'architettura standard a matrici dense, è stato condotto un esperimento di controllo A/B rigoroso:
 - **Pari Dati e Token:** Entrambi i modelli sono stati addestrati sullo stesso identico corpus (`v22_chinchilla_mix`, 0.74B token Chinchilla-optimal), stesso vocabolario a 1.251 pezzi (`vocab_stages`), stesso batch size e stesso hardware di sviluppo (Apple Silicon MPS).
-- **Confronto Strutturale:** **Sentinel R08** (v7 Pyramid, 44.5M) impiega **soli 2 strati di attenzione densa** integrati da 3 stadi di geosfere a 80 facce e centro piramidale a 1-hop; la **[Transformer Baseline](https://huggingface.co/Tom2701/R-08-Transformer-Baseline)** (44.9M) adotta 14 strati di attenzione causale densa standard (GPT-2 style). Il codice sorgente e i checkpoint safetensors della baseline sono liberamente consultabili e scaricabili su [GitHub](https://github.com/Thomasseri/R-08-Transformer-Baseline) e [Hugging Face](https://huggingface.co/Tom2701/R-08-Transformer-Baseline).
+- **Confronto Strutturale:** **Sentinel R08** (v7 Pyramid, 44.5M) impiega **soli 2 strati di attenzione densa** integrati da 3 stadi di geosfere a 80 facce e centro piramidale a 1-hop; la **[Transformer Baseline](https://huggingface.co/SentinelHub/R-08-Transformer-Baseline)** (44.9M) adotta 14 strati di attenzione causale densa standard (GPT-2 style). Il codice sorgente e i checkpoint safetensors della baseline sono liberamente consultabili e scaricabili su [GitHub](https://github.com/Thomasseri/R-08-Transformer-Baseline) e [Hugging Face](https://huggingface.co/SentinelHub/R-08-Transformer-Baseline).
 
-| Metrica di Laboratorio | Sentinel R08 (v7) | 🚀 [**R-08 v7.2**](https://huggingface.co/Tom2701/R-08-v7.2) | 🌟 [**R-08 v7.2a DA ZERO**](https://github.com/Thomasseri/R-08-v7.2a) | Transformer Baseline (185k Pre) | Transformer Baseline (10k Mid) | Vantaggio Architetturale R08 |
+| Metrica di Laboratorio | Sentinel R08 (v7) | 🚀 [**R-08 v7.2**](https://huggingface.co/SentinelHub/R-08-v7.2) | 🌟 [**R-08 v7.2a DA ZERO**](https://github.com/Thomasseri/R-08-v7.2a) | Transformer Baseline (185k Pre) | Transformer Baseline (10k Mid) | Vantaggio Architetturale R08 |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Parametri Totali** | **44.5M** | **51.6M** | **51.6M** | 44.9M | 44.9M | Pesi equivalenti (~45-51M) |
 | **Strati di Attenzione Densa** | **2 strati** | **2 strati** | **2 strati** | 14 strati | 14 strati | **-85.7% strati densi** |
@@ -118,7 +118,7 @@ Per quantificare scientificamente il contributo dell'**architettura a 3 sfere ge
 #### Insight Ingegneristico dello Studio A/B:
 1. **Efficienza Energetica e Edge AI:** Il Transformer a 14 strati densi ottiene una precisione grammaticale superiore (85.8% vs 80.95% - 82.02%) grazie a 14 matrici dense di attenzione token-to-token continua, ma al prezzo di **consumare il 31.2% di energia in più** e richiedere **7 volte più memoria di KV-Cache** in RAM.
 2. **La Forza della Geometria Geodetica:** Sentinel R08 raggiunge l'**80.95% - 82.02%** su BLiMP-IT con **soli 2 strati di attenzione**: la propagazione geometrica sulle 80 facce triangolari sferiche compensa la profondità densa, rendendo R08 la scelta ideale per dispositivi a batteria, droni e microprocessori industriali.
-3. **L'evoluzione di R-08 v7.2:** L'ipotesi sperimentale è stata validata con successo: con l'introduzione delle **Convoluzioni Causali 1D inter-sfera ($k=4$)** e dei **12 Poli Hub regionali dell'Icosaedro**, la generazione ha debellato i loop di balbuzie e l'accuratezza è balzata all'**82.02%** (vedi [R-08 v7.2](https://huggingface.co/Tom2701/R-08-v7.2)).
+3. **L'evoluzione di R-08 v7.2:** L'ipotesi sperimentale è stata validata con successo: con l'introduzione delle **Convoluzioni Causali 1D inter-sfera ($k=4$)** e dei **12 Poli Hub regionali dell'Icosaedro**, la generazione ha debellato i loop di balbuzie e l'accuratezza è balzata all'**82.02%** (vedi [R-08 v7.2](https://huggingface.co/SentinelHub/R-08-v7.2)).
 
 ---
 
@@ -132,9 +132,9 @@ Valutazione preliminare eseguita sui benchmark pubblici standard per la lingua i
 | **GPT-Neo-125M** | EleutherAI | 125M *(2.8× R08)* | 12 strati | ~500 MB | 68.2% | 61.5% |
 | **Pythia-70M** | EleutherAI | 70M *(1.6× R08)* | 6 strati | ~280 MB | 73.8% | 64.0% |
 | **GPT-2 Small** | OpenAI | 124M *(2.7× R08)* | 12 strati | ~498 MB | 74.5% - 80.1% | 66.8% |
-| [**Transformer Baseline (14 Layers)**](https://huggingface.co/Tom2701/R-08-Transformer-Baseline) | Baseline A/B di Controllo | 44.9M | 14 strati | ~179 MB | 82.53% - 85.84% | 85.15% - 86.83% |
+| [**Transformer Baseline (14 Layers)**](https://huggingface.co/SentinelHub/R-08-Transformer-Baseline) | Baseline A/B di Controllo | 44.9M | 14 strati | ~179 MB | 82.53% - 85.84% | 85.15% - 86.83% |
 | 🌐 **R08 (Rob / v7 Pyramid)** | **Thomas Seri / Sentinel** | **44.5M** | **2 strati** | **171.7 MB** | **80.95%** | **73.46%** |
-| 🚀 [**R08-v7.2 (Rob / 12 Hubs + 1D Conv)**](https://huggingface.co/Tom2701/R-08-v7.2) | **Thomas Seri / Sentinel** | **51.6M** | **2 strati** | **206.4 MB** | **82.02%** 🏆 | **73.46%** |
+| 🚀 [**R08-v7.2 (Rob / 12 Hubs + 1D Conv)**](https://huggingface.co/SentinelHub/R-08-v7.2) | **Thomas Seri / Sentinel** | **51.6M** | **2 strati** | **206.4 MB** | **82.02%** 🏆 | **73.46%** |
 
 > [!NOTE]
 > **Trasparenza Metodologica & Invito a Riscontri Indipendenti:**
@@ -152,8 +152,8 @@ Il modello può essere eseguito localmente su qualsiasi computer (Mac Metal MPS,
 from modeling_geodesic import R08Model, R08Tokenizer
 
 # 1. Carica Tokenizer e Modello dai pesi safetensors (Hugging Face Hub)
-tokenizer = R08Tokenizer.from_pretrained("Tom2701/R-08")
-model = R08Model.from_pretrained("Tom2701/R-08")
+tokenizer = R08Tokenizer.from_pretrained("SentinelHub/R-08")
+model = R08Model.from_pretrained("SentinelHub/R-08")
 
 # 2. Genera testo con sampling e repetition penalty
 prompt = "Utente: Ciao, come stai?\nAssistente:"

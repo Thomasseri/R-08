@@ -83,5 +83,5 @@ print(f"  ✓ Generati {n_tok} token in {sec:.2f}s ({tok_per_sec:.1f} token/s su
 print("\n" + "=" * 60)
 print("✅ TUTTI I TEST HUGGING FACE SUPERATI CON SUCCESSO!")
 print("   Il pacchetto è pronto per essere pubblicato su Hugging Face.")
-print("   Repository di destinazione: Thomasseri/R-08")
+print("   Repository di destinazione: SentinelHub/R-08")
 print("=" * 60)
