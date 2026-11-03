@@ -43,5 +43,9 @@
     "AutoModelForCausalLM": "modeling_geodesic.GeodesicPyramidModel"
   },
   "torch_dtype": "float32",
-  "transformers_version": "4.45.0"
+  "transformers_version": "4.45.0",
+  "author": "Thomas Seri (Sentinel)",
+  "license": "R08-Non-Commercial-Ethical-License-v2.0",
+  "jurisdiction": "Court of Milan (Sezione Specializzata in Materia di Impresa), Italy",
+  "prohibited_uses": "Commercial, Military, Defense, Clean-Room Reverse Engineering, Model Distillation"
 }
