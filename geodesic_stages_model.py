@@ -1,3 +1,14 @@
+# ============================================================================
+# LEGAL NOTICE & WATERMARK: R08 NON-COMMERCIAL RESEARCH & ETHICAL LICENSE v2.0
+# Copyright (c) 2026 Thomas Seri (Sentinel). All Rights Reserved.
+# Exclusive Jurisdiction: Court of Milan (Sezione Specializzata Impresa), Italy.
+# Clean-room reverse engineering, distillation, commercial or military use
+# is strictly prohibited and constitutes a breach of contract.
+# ============================================================================
+__author__ = "Thomas Seri (Sentinel)"
+__license__ = "R08-Non-Commercial-Ethical-License-v2.0"
+__jurisdiction__ = "Court of Milan, Italy"
+
 """
 Cascade a 3 stadi in SERIE (non stream paralleli).
 
