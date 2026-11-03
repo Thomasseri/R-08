@@ -16,6 +16,10 @@ pipeline_tag: text-generation
 inference: false
 ---
 
+<p align="center">
+  <img src="assets/r08_logo.jpg" width="320" alt="Sentinel R08 — Pocket Core" style="border-radius: 16px;" />
+</p>
+
 # R08 (Rob) — Geodesic Mesh Neural Network (Pyramidal Sphere 50M)
 ### *Il Cuore Neurale Geometrico di SENTINEL LifeOS*
 
