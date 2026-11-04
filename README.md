@@ -184,3 +184,17 @@ Il modello **R08** e il sistema **Sentinel LifeOS** sono distribuiti sotto la li
 - ❌ **Vietato a Scopi di Lucro:** Qualsiasi utilizzo commerciale, vendita, sublicenza o incorporazione in prodotti for-profit senza licenza commerciale scritta rilasciata da Sentinel.
 - 🚫 **Divieti Etici Assoluti (Acceptable Use Policy):** È severamente vietato qualsiasi impiego per scopi militari/bellici/armi, attacchi informatici/malware, campagne politiche e propaganda di partito, indottrinamento religioso, pornografia/sfruttamento sessuale, promozione di dipendenze (gioco d'azzardo/stupefacenti), decisioni mediche/finanziarie autonome non supervisionate o sorveglianza biometrica lesiva dei diritti umani.
 - 🛡️ **Tutela Marchio & Esonero Responsabilità:** Marchi "Sentinel" e "Thomas Seri" protetti contro uso non autorizzato. Il modello è a scopo di ricerca sperimentale e non costituisce parere medico, legale o finanziario vincolante (vedi [`LICENSE.md`](LICENSE.md)).
+
+
+---
+
+## 📋 Specifiche Tecniche Ufficiali & Architettura Hardware
+
+| Parametro Tecnico | Valore Certificato (`Sentinel R-08 v7.0`) |
+| :--- | :--- |
+| **Architettura Neurale** | **Geodesic Pyramidal Mesh Network** (3 Sfere Concentriche a 80 facce icosaedriche + Super-Nodo Piramidale Centrale, soli 2 strati di attenzione densa) |
+| **Parametri Totali in `model.safetensors`** | **`44.936.996`** tensori totali salvati (composti da **`44.575.667` parametri neurali attivi** + **`361.329` buffer topologici** e indici di adiacenza dell'icosaedro geodetico) |
+| **Runtime di Esecuzione** | **Motore Geometrico Nativo `modeling_geodesic.py`** (`trust_remote_code=True`). Essendo una topologia sferico-piramidale non-Transformer, utilizza obbligatoriamente il proprio runtime nativo invece di wrapper nati solo per Transformer piatti. |
+| **Finestra di Contesto & Roadmap `v7.2c`** | **`256 – 512` token nativi** (valutata fino a **`2.048` token** con `0,8 MB – 3,2 MB` di KV-Cache). *L'estensione nativa a **`8.192` token (`8K`)** è in fase di test di laboratorio sul modello **`Sentinel R-08 v7.2c "Il Maestro"` (`110M`)**.* |
+| **Benchmark & Confronto Internazionale** | **`80,95%` su BLiMP-IT** (3.481 coppie), **`73,46%` su MultiBLiMP Italiano** (2.916 coppie) e **`62,5%` (10/16) su TruthfulQA Anti-Allucinazione Zero-Shot**, superando **`Pythia-70M`** (`50,0%`) e **`GPT-2 Base 124M`** (`50,0%`) con un footprint RAM di soli **`~120 MB`** e **`2,30 mJ/token`**. |
+| **Lingua & Licenza** | Italiano (`it`) · **R08 Non-Commercial Research & Ethical License v2.0** (Foro Esclusivo di Milano) |
