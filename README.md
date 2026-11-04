@@ -17,7 +17,7 @@ inference: false
 ---
 
 <p align="center">
-  <img src="assets/r08_logo.jpg" width="320" alt="Sentinel R08 — Pocket Core" style="border-radius: 16px;" />
+ <img src="assets/r08_logo.jpg" width="320" alt="Sentinel R08 — Pocket Core" style="border-radius: 16px;" />
 </p>
 
 # R08 (Rob) — Geodesic Mesh Neural Network (Pyramidal Sphere 50M)
@@ -31,13 +31,13 @@ inference: false
 [![Language](https://img.shields.io/badge/Language-Italian%20(IT)-yellow.svg)](https://github.com/Thomasseri/R-08)
 [![License](https://img.shields.io/badge/License-Non--Commercial%20Research-lightgrey.svg)](LICENSE.md)
 
-**Nome Ufficiale del Modello:** **R08** *(per gli amici **Rob**, da Robot)*  
-**Progetto Padre & Ecosistema:** **[Sentinel LifeOS](https://www.sentinelhub.eu)** *(Il Sistema Operativo di Vita e Gestione)*  
-**Sito Ufficiale:** **[www.sentinelhub.eu](https://www.sentinelhub.eu)**  
-**Autore & Ideatore:** Thomas Seri (Sentinel)  
-**Organizzazione:** SentinelHub  
-**Hardware di Sviluppo:** Apple Silicon (Metal Performance Shaders - MPS)  
-**Versione Successiva Evoluta:** 🚀 [**Sentinel R-08 v7.2 (51.6M)**](https://huggingface.co/SentinelHub/R-08-v7.2) | [GitHub v7.2](https://github.com/Thomasseri/R-08-v7.2)  
+**Nome Ufficiale del Modello:** **R08** *(per gli amici **Rob**, da Robot)* 
+**Progetto Padre & Ecosistema:** **[Sentinel LifeOS](https://www.sentinelhub.eu)** *(Il Sistema Operativo di Vita e Gestione)* 
+**Sito Ufficiale:** **[www.sentinelhub.eu](https://www.sentinelhub.eu)** 
+**Autore & Ideatore:** Thomas Seri (Sentinel) 
+**Organizzazione:** SentinelHub 
+**Hardware di Sviluppo:** Apple Silicon (Metal Performance Shaders - MPS) 
+**Versione Successiva Evoluta:** 🚀 [**Sentinel R-08 v7.2 (51.6M)**](https://huggingface.co/SentinelHub/R-08-v7.2) | [GitHub v7.2](https://github.com/Thomasseri/R-08-v7.2) 
 **Nuovo Record Scientifico:** 🌟 [**Sentinel R-08 v7.2a DA ZERO (51.6M)**](https://github.com/Thomasseri/R-08-v7.2a) | [Hugging Face v7.2a](https://huggingface.co/SentinelHub/R-08-v7.2a)
 
 > [!TIP]
@@ -65,23 +65,23 @@ Mentre i sistemi tradizionali sono frammentati tra decine di app ed Excel, Senti
 Mentre i Large Language Model convenzionali si affidano al solito Transformer "piatto" a matrici dense con complessità quadratica $O(N^2)$, **R08** introduce una topologia sferico-piramidale non-euclidea:
 
 1. **Topologia a Sfera Geodetica (Buckminster Fuller)**:
-   - I pesi e le rappresentazioni concettuali sono distribuiti sulle **80 facce triangolari di un icosaedro geodetico regolarizzato** a 42 vertici proiettato su una sfera 3D.
-   - Ogni token viene instradato nello spazio geometrico sferico, favorendo un clustering naturale dei concetti affini e riducendo drasticamente le allucinazioni.
+  - I pesi e le rappresentazioni concettuali sono distribuiti sulle **80 facce triangolari di un icosaedro geodetico regolarizzato** a 42 vertici proiettato su una sfera 3D.
+  - Ogni token viene instradato nello spazio geometrico sferico, favorendo un clustering naturale dei concetti affini e riducendo drasticamente le allucinazioni.
 
 2. **Centro Piramidale (Pyramidal Center Hub a 1-Hop)**:
-   - Al centro della sfera risiede un super-nodo piramidale connesso a tutte le 80 facce triangolari (753.408 parametri dedicati).
-   - Consente lo scambio istantaneo di informazioni globali polo-polo in un solo passaggio, eliminando i colli di bottiglia.
+  - Al centro della sfera risiede un super-nodo piramidale connesso a tutte le 80 facce triangolari (753.408 parametri dedicati).
+  - Consente lo scambio istantaneo di informazioni globali polo-polo in un solo passaggio, eliminando i colli di bottiglia.
 
 3. **Efficienza Strutturale (2 Strati di Attenzione vs 12-14 Strati Convenzionali)**:
-   - Dai primi test di laboratorio pare che R08 riesca a mantenere una solida coerenza sintattica impiegando **soli 2 strati di attenzione causale densa** (invece dei consueti 12-14 strati), affidando la propagazione dei pattern alla geometria sferica.
+  - Dai primi test di laboratorio pare che R08 riesca a mantenere una solida coerenza sintattica impiegando **soli 2 strati di attenzione causale densa** (invece dei consueti 12-14 strati), affidando la propagazione dei pattern alla geometria sferica.
 
 4. **Cascata Multilivello a 3 Stadi in Serie**:
-   - **Stadio 1 (Pezzi):** Subword grain fine (1.251 token).
-   - **Stadio 2 (Parole):** Lessico esteso (17.908 token).
-   - **Stadio 3 (Unioni):** Sintagmi e unioni concettuali (20.006 token).
+  - **Stadio 1 (Pezzi):** Subword grain fine (1.251 token).
+  - **Stadio 2 (Parole):** Lessico esteso (17.908 token).
+  - **Stadio 3 (Unioni):** Sintagmi e unioni concettuali (20.006 token).
 
 5. **Integrazione con Sentinel Knowledge Ecosystem**:
-   - R08 è progettato nativamente per accoppiarsi al motore ontologico a 4 livelli della piattaforma [Sentinel LifeOS](https://www.sentinelhub.eu), con l'obiettivo di supportare query tecniche su codici ricambio, coppie di serraggio (Nm) e parametri industriali.
+  - R08 è progettato nativamente per accoppiarsi al motore ontologico a 4 livelli della piattaforma [Sentinel LifeOS](https://www.sentinelhub.eu), con l'obiettivo di supportare query tecniche su codici ricambio, coppie di serraggio (Nm) e parametri industriali.
 
 ---
 
@@ -90,7 +90,7 @@ Mentre i Large Language Model convenzionali si affidano al solito Transformer "p
 ### 1. Studio A/B Diretto: Sentinel R08 (v7 Pyramid) vs Transformer Baseline (Chinchilla 185k)
 
 > [!IMPORTANT]
-> **Modello di Controllo Open Source per il Paragone Scientifico (Vocabolario 1.2k pezzi):**  
+> **Modello di Controllo Open Source per il Paragone Scientifico (Vocabolario 1.2k pezzi):** 
 > Per consentire alla community scientifica di replicare ed esaminare in modo trasparente tutti i risultati comparativi rispetto all'architettura a **geoide piramidale (Sentinel R-08)**, il modello Transformer denso di controllo utilizzato per il benchmark (44.9M parametri, 14 strati di attenzione causale, stesso identico dataset Chinchilla e stesso vocabolario a 1.2k pezzi subword) è interamente accessibile con codice sorgente e pesi safetensors:
 > - 🐙 **GitHub:** [Thomasseri/R-08-Transformer-Baseline](https://github.com/Thomasseri/R-08-Transformer-Baseline)
 > - 🤗 **Hugging Face Hub:** [SentinelHub/R-08-Transformer-Baseline](https://huggingface.co/SentinelHub/R-08-Transformer-Baseline)
@@ -163,12 +163,12 @@ model = R08Model.from_pretrained("SentinelHub/R-08")
 # 2. Genera testo con sampling e repetition penalty
 prompt = "Utente: Ciao, come stai?\nAssistente:"
 risposta = model.generate(
-    prompt=prompt,
-    tokenizer=tokenizer,
-    max_new_tokens=48,
-    temperature=0.7,
-    top_p=0.9,
-    repetition_penalty=1.15
+  prompt=prompt,
+  tokenizer=tokenizer,
+  max_new_tokens=48,
+  temperature=0.7,
+  top_p=0.9,
+  repetition_penalty=1.15
 )
 
 print(risposta)
@@ -195,6 +195,6 @@ Il modello **R08** e il sistema **Sentinel LifeOS** sono distribuiti sotto la li
 | **Architettura Neurale** | **Geodesic Pyramidal Mesh Network** (3 Sfere Concentriche a 80 facce icosaedriche + Super-Nodo Piramidale Centrale, soli 2 strati di attenzione densa) |
 | **Parametri Totali in `model.safetensors`** | **`44.936.996`** tensori totali salvati (composti da **`44.575.667` parametri neurali attivi** + **`361.329` buffer topologici** e indici di adiacenza dell'icosaedro geodetico) |
 | **Runtime di Esecuzione** | **Motore Geometrico Nativo `modeling_geodesic.py`** (`trust_remote_code=True`). Essendo una topologia sferico-piramidale non-Transformer, utilizza obbligatoriamente il proprio runtime nativo invece di wrapper nati solo per Transformer piatti. |
-| **Finestra di Contesto & Roadmap `v7.2c`** | **`256 – 512` token nativi** (valutata fino a **`2.048` token** con `0,8 MB – 3,2 MB` di KV-Cache). *L'estensione nativa a **`8.192` token (`8K`)** è in fase di test di laboratorio sul modello **`Sentinel R-08 v7.2c "Il Maestro"` (`110M`)**.* |
+| **Finestra di Contesto Operativa** | **`256 – 512` token nativi** (valutata fino a **`2.048` token** in inferenza con soli `0,8 MB – 3,2 MB` di KV-Cache). |
 | **Benchmark & Confronto Internazionale** | **`80,95%` su BLiMP-IT** (3.481 coppie), **`73,46%` su MultiBLiMP Italiano** (2.916 coppie) e **`62,5%` (10/16) su TruthfulQA Anti-Allucinazione Zero-Shot**, superando **`Pythia-70M`** (`50,0%`) e **`GPT-2 Base 124M`** (`50,0%`) con un footprint RAM di soli **`~120 MB`** e **`2,30 mJ/token`**. |
 | **Lingua & Licenza** | Italiano (`it`) · **R08 Non-Commercial Research & Ethical License v2.0** (Foro Esclusivo di Milano) |
