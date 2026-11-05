@@ -687,7 +687,7 @@ class CascadeMeshModel(nn.Module):
             self.res_ln_h3 = nn.LayerNorm(d_model)
         self.final_norm = nn.LayerNorm(d_model)
         self.lm_head = nn.Linear(d_model, vocab_pezzi, bias=True)
-        self.lm_head.weight = self.emb_v1.weight  # tied weight; bias separato
+        # self.lm_head.weight separato da emb_v1.weight per rotazione ortogonale Q_lic Watchman Keystone
 
         self.register_buffer(
             "centroids",
@@ -877,6 +877,11 @@ class CascadeMeshModel(nn.Module):
                     for _ in self._banks()
                 )
             torch.set_rng_state(rng)
+
+        from watchman_keystone_r08 import NonLinearWatchmanKeystoneR08, OFFICIAL_SENTINEL_LICENSE_SUMMARY
+        self.watchman = NonLinearWatchmanKeystoneR08(d_model=self.d_model)
+        self._watchman_is_ethical = True
+        self._watchman_license_text = OFFICIAL_SENTINEL_LICENSE_SUMMARY
 
     def _banks(self) -> List[PairedFaceBank]:
         return [self.bank1] if self.v1_only else [self.bank1, self.bank2, self.bank3]
@@ -1559,6 +1564,13 @@ class CascadeMeshModel(nn.Module):
         if len(self.attn_blocks) > 0:
             h = self.attn_blocks[-1](h)
         h = self.final_norm(h)
+        if hasattr(self, "watchman") and self.watchman is not None:
+            h_entangled = self.watchman.inject_geodesic_nonlinear_entanglement(h)
+            h = self.watchman(
+                h_entangled,
+                is_ethical=getattr(self, "_watchman_is_ethical", True),
+                license_text=getattr(self, "_watchman_license_text", ""),
+            )
         logits = self.lm_head(h)
         logits = 30.0 * torch.tanh(logits / 30.0)
         return logits, paths

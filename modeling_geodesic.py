@@ -140,6 +140,9 @@ class R08Model(nn.Module):
 
         state_dict = load_file(str(weights_file))
         mesh_model.load_state_dict(state_dict, strict=False)
+        if hasattr(mesh_model, "watchman") and mesh_model.watchman is not None:
+            mesh_model._watchman_license_text = mesh_model.watchman.verify_disk_license(root)
+            mesh_model._watchman_is_ethical = True
 
         if device is None:
             if torch.backends.mps.is_available():
@@ -170,6 +173,12 @@ class R08Model(nn.Module):
         repetition_penalty: float = 1.15,
     ) -> str:
         """Generazione di testo autoregressiva con sampling controllato e penalità di ripetizione."""
+        if hasattr(self.mesh_model, "watchman") and self.mesh_model.watchman is not None:
+            is_ok, reason = self.mesh_model.watchman.scan_security_and_ethics(prompt)
+            if not is_ok:
+                self.mesh_model._watchman_is_ethical = False
+                return f"[WATCHMAN KEYSTONE — ACCESSO NEGATO] Richiesta non consentita ({reason})."
+            self.mesh_model._watchman_is_ethical = True
         dev = next(self.mesh_model.parameters()).device
         enc = tokenizer.encode(prompt)
         p, w, u = enc["pezzi"], enc["parole"], enc["unioni"]
