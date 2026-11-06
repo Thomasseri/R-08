@@ -38,22 +38,22 @@ inference: false
 **Organizzazione:** SentinelHub 
 **Hardware di Sviluppo:** Apple Silicon (Metal Performance Shaders - MPS) 
 **Versione Successiva Evoluta:** 🚀 [**Sentinel R-08 v7.2 (51.6M)**](https://huggingface.co/SentinelHub/R-08-v7.2) | [GitHub v7.2](https://github.com/Thomasseri/R-08-v7.2) 
-**Nuovo Record Scientifico:** 🌟 [**Sentinel R-08 v7.2a DA ZERO (51.6M)**](https://github.com/Thomasseri/R-08-v7.2a) | [Hugging Face v7.2a](https://huggingface.co/SentinelHub/R-08-v7.2a)
+**Nuovo modello:** 🌟 [**Sentinel R-08 v7.2a DA ZERO (51.6M)**](https://github.com/Thomasseri/R-08-v7.2a) | [Hugging Face v7.2a](https://huggingface.co/SentinelHub/R-08-v7.2a)
 
 > [!TIP]
-> ### 🚀 È Rilasciato il Nuovo Modello Sentinel R08-v7.2 (51.6M) & il Record di v7.2a!
+> ### 🚀 È Rilasciato il Nuovo Modello Sentinel R08-v7.2 (51.6M) & v7.2a DA ZERO
 > L'evoluzione neurale geometrica di Sentinel LifeOS è ora disponibile con **Convoluzioni Causali 1D Inter-Stadio ($k=4$)** e **12 Hub Regionali dell'Icosaedro**:
-> - **BLiMP-IT sale all'82.02% (v7.2) e tocca il record assoluto dell'82.51% (v7.2a DA ZERO)**
-> - **MultiBLiMP balza al record storico del 76.71% (v7.2a)**
+> - **BLiMP-IT: 82.02% (v7.2) e 82.51% (v7.2a DA ZERO), il migliore tra gli R-08** (Transformer di controllo a 14 strati: 85.84%)
+> - **MultiBLiMP: 76.71% (v7.2a)** (Transformer di controllo: 86.83%)
 > - **Eliminazione totale di loop e balbuzie ciclica** nei testi lunghi
-> - **-85.7% di memoria KV-Cache** e **-28.3% di consumo energetico** rispetto al Transformer convenzionale
+> - **-85.7% di memoria KV-Cache** rispetto al Transformer di controllo (2 strati di attenzione contro 14)
 > - 🌟 **GitHub v7.2a:** [Thomasseri/R-08-v7.2a](https://github.com/Thomasseri/R-08-v7.2a) | [SentinelHub/R-08-v7.2a](https://huggingface.co/SentinelHub/R-08-v7.2a)
 > - 🐙 **GitHub v7.2:** [Thomasseri/R-08-v7.2](https://github.com/Thomasseri/R-08-v7.2) | [SentinelHub/R-08-v7.2](https://huggingface.co/SentinelHub/R-08-v7.2)
 
 ---
 
 > ### 💼 Investment, Compute Grants & Enterprise Licensing (Investimenti & Partnership Industriali)
-> 🇬🇧 **Sentinel** is scaling the **Geodesic Pyramidal Sphere Architecture (`R-08`)** from 50M to **110M–1B+ parameters**, backed by **18 industrial patent filings** (Non-Euclidean Geodesic Mesh, Isomorphic `SSvvv` Lexical-Voice Engine, Post-Quantum Tamper-Resistant Keystone Security, Edge & Autonomous Systems).  
+> 🇬🇧 **Sentinel** is scaling the **Geodesic Pyramidal Sphere Architecture (`R-08`)** from 50M to **110M–1B+ parameters**, with **patent applications filed at the Italian Patent and Trademark Office (UIBM)**.  
 > **Open to Seed / Deep-Tech Investment, GPU/TPU Compute Grants, and Enterprise R&D Partnerships.**  
 > 🇮🇹 **Aperto a Investimenti Seed / Deep-Tech, Grant Computazionali GPU/TPU e Licenze Industriali Enterprise.**  
 > 📩 **Contact Founder & Inventor Thomas Seri:** 🌐 **[www.sentinelhub.eu](https://www.sentinelhub.eu)** | 🐙 **[GitHub (@Thomasseri)](https://github.com/Thomasseri)** | 🤗 **[Hugging Face (@SentinelHub)](https://huggingface.co/SentinelHub)** | 💬 **[Open an Inquiry / Issue](https://github.com/Thomasseri/R-08/issues/new)**
@@ -111,11 +111,10 @@ Per quantificare scientificamente il contributo dell'**architettura a 3 sfere ge
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Parametri Totali** | **44.5M** | **51.6M** | **51.6M** | 44.9M | 44.9M | Pesi equivalenti (~45-51M) |
 | **Strati di Attenzione Densa** | **2 strati** | **2 strati** | **2 strati** | 14 strati | 14 strati | **-85.7% strati densi** |
-| **BLiMP-IT (Accuratezza Linguistica)** | **80.95%** | **82.02%** | **82.51%** 🏆 | 82.53% | 85.84% | Competitivo con soli 2 strati |
-| **MultiBLiMP (Ragionamento Sintattico)** | **73.46%** | **73.46%** | **76.71%** 🏆 | 85.15% | 86.83% | Nuovo picco geodetico (+3.25%) |
+| **BLiMP-IT (Accuratezza Linguistica)** | **80.95%** | **82.02%** | **82.51%** | 82.53% | 85.84% | Competitivo con soli 2 strati |
+| **MultiBLiMP (Ragionamento Sintattico)** | **73.46%** | **73.46%** | **76.71%** | 85.15% | 86.83% | Nuovo picco geodetico (+3.25%) |
 | **Resistenza Allucinazioni (Zero-Shot)** | **62.5%** *(Fatti 4/4)* | **56.2%** *(Fatti 3/4)* | **56.2%** *(Fatti 4/4 100%)* | 56.2% | 68.8% | Zero allucinazioni su fatti reali |
 | **Throughput Training (MPS)** | **~10.150 tok/s** | **~7.200 tok/s** | **~7.694 tok/s** | ~8.650 tok/s | ~8.650 tok/s | Elevata efficienza computazionale |
-| **Consumo Energetico per Token** | **2.3 mJ / tok** | **2.4 mJ / tok** | **2.4 mJ / tok** | 3.3 mJ / tok | 3.3 mJ / tok | **-27.3% / -30.3% energia risparmiata** 🔋 |
 | **Impronta Memoria KV-Cache (512 ctx)** | **0.8 MB** | **0.8 MB** | **0.8 MB** | 5.6 MB | 5.6 MB | **-85.7% traffico RAM/Cache (7× più leggero)** 💾 |
 
 ---
@@ -129,30 +128,17 @@ Per quantificare scientificamente il contributo dell'**architettura a 3 sfere ge
 ![Curva di Efficienza RAM KV-Cache](./assets/kv_cache_ram_curve.svg)
 
 #### Insight Ingegneristico dello Studio A/B:
-1. **Efficienza Energetica e Edge AI:** Il Transformer a 14 strati densi ottiene una precisione grammaticale superiore (85.8% vs 80.95% - 82.02%) grazie a 14 matrici dense di attenzione token-to-token continua, ma al prezzo di **consumare il 31.2% di energia in più** e richiedere **7 volte più memoria di KV-Cache** in RAM.
-2. **La Forza della Geometria Geodetica:** Sentinel R08 raggiunge l'**80.95% - 82.02%** su BLiMP-IT con **soli 2 strati di attenzione**: la propagazione geometrica sulle 80 facce triangolari sferiche compensa la profondità densa, rendendo R08 la scelta ideale per dispositivi a batteria, droni e microprocessori industriali.
+1. **Compromesso qualità / memoria:** Il Transformer a 14 strati densi ottiene una precisione grammaticale superiore (85.84% contro 80.95% – 82.51% su BLiMP-IT, 86.83% contro 73.46% – 76.71% su MultiBLiMP), ma richiede **7 volte più memoria di KV-Cache** in RAM (5.6 MB contro 0.8 MB a 512 token).
+2. **Geometria Geodetica:** Sentinel R08 raggiunge l'**80.95% – 82.51%** su BLiMP-IT con **soli 2 strati di attenzione**, a circa 3–5 punti dal Transformer a 14 strati: un compromesso interessante per dispositivi con poca memoria.
 3. **L'evoluzione di R-08 v7.2:** L'ipotesi sperimentale è stata validata con successo: con l'introduzione delle **Convoluzioni Causali 1D inter-sfera ($k=4$)** e dei **12 Poli Hub regionali dell'Icosaedro**, la generazione ha debellato i loop di balbuzie e l'accuratezza è balzata all'**82.02%** (vedi [R-08 v7.2](https://huggingface.co/SentinelHub/R-08-v7.2)).
 
 ---
 
-### 2. Confronto Generale vs Modelli Foundation Open (~70M - 125M)
+### 2. Confronto con modelli esterni
 
-Valutazione preliminare eseguita sui benchmark pubblici standard per la lingua italiana (`BLiMP-IT` 3.481 coppie e `MultiBLiMP` 2.916 coppie):
-
-| Modello | Creatore | Parametri | Strati Attenzione Densa | Peso Checkpoint | BLiMP-IT (Accuratezza Linguistica) | MultiBLiMP (Ragionamento Logico) |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| **OPT-125M** | Meta (Facebook AI) | 125M *(2.8× R08)* | 12 strati | ~500 MB | 62.5% | 58.0% |
-| **GPT-Neo-125M** | EleutherAI | 125M *(2.8× R08)* | 12 strati | ~500 MB | 68.2% | 61.5% |
-| **Pythia-70M** | EleutherAI | 70M *(1.6× R08)* | 6 strati | ~280 MB | 73.8% | 64.0% |
-| **GPT-2 Small** | OpenAI | 124M *(2.7× R08)* | 12 strati | ~498 MB | 74.5% - 80.1% | 66.8% |
-| [**Transformer Baseline (14 Layers)**](https://huggingface.co/SentinelHub/R-08-Transformer-Baseline) | Baseline A/B di Controllo | 44.9M | 14 strati | ~179 MB | 82.53% - 85.84% | 85.15% - 86.83% |
-| 🌐 **R08 (Rob / v7 Pyramid)** | **Thomas Seri / Sentinel** | **44.5M** | **2 strati** | **171.7 MB** | **80.95%** | **73.46%** |
-| 🚀 [**R08-v7.2 (Rob / 12 Hubs + 1D Conv)**](https://huggingface.co/SentinelHub/R-08-v7.2) | **Thomas Seri / Sentinel** | **51.6M** | **2 strati** | **206.4 MB** | **82.02%** 🏆 | **73.46%** |
+Un confronto con modelli open esterni (Pythia-70M, GPT-2, OPT, GPT-Neo) sugli stessi benchmark italiani non è ancora stato eseguito con uno script riproducibile. Le versioni precedenti di questa pagina riportavano numeri per questi modelli che non erano verificati: sono stati rimossi il 6/11/2026 e verranno ripubblicati solo dopo una misura reale.
 
 > [!NOTE]
-> **Trasparenza Metodologica & Invito a Riscontri Indipendenti:**
-> - **Dominio Linguistico Specializzato:** I test `BLiMP-IT` e `MultiBLiMP` misurano specificamente la sensibilità grammaticale in lingua italiana, dominio primario per cui R08 è stato curato e addestrato. Al contrario, modelli come Pythia, OPT o GPT-Neo sono foundation model prevalentemente anglofoni con vocabolari subword non ottimizzati per l'italiano (sul benchmark gemello BLiMP in inglese nativo, infatti, Pythia e GPT-2 ottengono le loro massime performance a 74.6% e 85.0%, mentre R08 non essendo addestrato su inglese si attesta sul 52.8%).
-> - **Primi Riscontri di Efficienza Architetturale:** L'architettura geodetica a 3 sfere con soli 2 strati di attenzione densa consente una notevole efficienza di calcolo (fino a -85.7% di traffico di banda KV-cache in RAM e oltre il 31% di risparmio sui consumi energetici misurati su Apple Silicon Metal).
 > - **Aperto alla Community:** Trattandosi di un'architettura sperimentale non convenzionale, questi numeri di laboratorio attendono ulteriori riscontri e repliche indipendenti. Il codice e i pesi sono 100% open source proprio per invitare ricercatori, ingegneri e appassionati a testare il modello nei loro ambienti e a condividere feedback, limiti o suggerimenti.
 
 ---
@@ -204,5 +190,5 @@ Il modello **R08** e il sistema **Sentinel LifeOS** sono distribuiti sotto la li
 | **Parametri Totali in `model.safetensors`** | **`44.936.996`** tensori totali salvati (composti da **`44.575.667` parametri neurali attivi** + **`361.329` buffer topologici** e indici di adiacenza dell'icosaedro geodetico) |
 | **Runtime di Esecuzione** | **Motore Geometrico Nativo `modeling_geodesic.py`** (`trust_remote_code=True`). Essendo una topologia sferico-piramidale non-Transformer, utilizza obbligatoriamente il proprio runtime nativo invece di wrapper nati solo per Transformer piatti. |
 | **Finestra di Contesto Operativa** | **`256 – 512` token nativi** (valutata fino a **`2.048` token** in inferenza con soli `0,8 MB – 3,2 MB` di KV-Cache). |
-| **Benchmark & Confronto Internazionale** | **`80,95%` su BLiMP-IT** (3.481 coppie), **`73,46%` su MultiBLiMP Italiano** (2.916 coppie) e **`62,5%` (10/16) su TruthfulQA Anti-Allucinazione Zero-Shot**, superando **`Pythia-70M`** (`50,0%`) e **`GPT-2 Base 124M`** (`50,0%`) con un footprint RAM di soli **`~120 MB`** e **`2,30 mJ/token`**. |
+| **Benchmark** | **`80,95%` su BLiMP-IT** (3.481 coppie) e **`73,46%` su MultiBLiMP Italiano** (2.916 coppie). TruthfulQA ridotto: `62,5%` (10/16 domande, campione troppo piccolo per confronti). Footprint RAM **`~120 MB`**. |
 | **Lingua & Licenza** | Italiano (`it`) · **R08 Non-Commercial Research & Ethical License v2.0** (Foro Esclusivo di Milano) |
