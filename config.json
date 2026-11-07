@@ -1,0 +1,51 @@
+{
+  "model_name": "R08",
+  "architectures": [
+    "R08Model"
+  ],
+  "model_type": "geodesic_mesh_pyramid",
+  "architecture_name": "cascade_stages_attn_mesh",
+  "wiring": "serial_emb_mesh_x3_head_pezzi",
+  "d_model": 256,
+  "max_seq_len": 512,
+  "seq_len": 256,
+  "vocab_pezzi": 1251,
+  "vocab_parole": 17908,
+  "vocab_unioni": 20006,
+  "n_attn_layers": 2,
+  "n_heads": 8,
+  "pyramid_center": true,
+  "pyramid_config": {
+    "d_stretto": 128,
+    "d_centro": 512,
+    "stadi": 3,
+    "facce": 80,
+    "vertici": 42,
+    "parametri_piramide": 753408
+  },
+  "mesh_topology": {
+    "geometry": "geodesic_sphere_icosahedron",
+    "frequency": 2,
+    "total_faces": 80,
+    "total_vertices": 42,
+    "neighbors_per_face": 3
+  },
+  "routing": {
+    "hash_routing": true,
+    "router_v6": true,
+    "no_walk": true,
+    "compass_spiral": true
+  },
+  "total_parameters": 44575907,
+  "trainable_parameters": 44575907,
+  "auto_map": {
+    "AutoConfig": "modeling_geodesic.GeodesicConfig",
+    "AutoModelForCausalLM": "modeling_geodesic.GeodesicPyramidModel"
+  },
+  "torch_dtype": "float32",
+  "transformers_version": "4.45.0",
+  "author": "Thomas Seri (Sentinel)",
+  "license": "R08-Non-Commercial-Ethical-License-v2.0",
+  "jurisdiction": "Court of Milan (Sezione Specializzata in Materia di Impresa), Italy",
+  "prohibited_uses": "Commercial, Military, Defense, Clean-Room Reverse Engineering, Model Distillation"
+}
